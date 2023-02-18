@@ -28,10 +28,6 @@ public class RedBall extends Actor
         offsetY = initialSpeed * (random.nextBoolean()? -1 : 1);;
     }
     
-    /**
-     * Act - do whatever the BlueBall wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act()
     {
         World world = getWorld();
@@ -71,10 +67,10 @@ public class RedBall extends Actor
             collisionTimeout--;
         }
         
-        
         //movement
         
         setLocation(x + offsetX, y + offsetY);
         
     }
+    
 }

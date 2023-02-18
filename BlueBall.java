@@ -2,10 +2,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 import java.util.Random;
 
-/**
- * BlueBall
- **/
- 
 public class BlueBall extends Actor
 {
     
@@ -28,10 +24,6 @@ public class BlueBall extends Actor
         offsetY = initialSpeed * (random.nextBoolean()? -1 : 1);;
     }
     
-    /**
-     * Act - do whatever the BlueBall wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act()
     {
         World world = getWorld();
@@ -77,4 +69,5 @@ public class BlueBall extends Actor
         setLocation(x + offsetX, y + offsetY);
         
     }
+    
 }
